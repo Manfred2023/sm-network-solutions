@@ -1,4 +1,4 @@
-<script setup lang="ts">defineProps<{ title: string; items: string[] }>()</script>
+<script setup lang="ts">defineProps<{ title: string; items: string[] }>();</script>
 <template>
   <article class="border border-line bg-white p-6 border-t-2 border-t-tech">
     <h3 class="text-2xl">{{ title }}</h3>

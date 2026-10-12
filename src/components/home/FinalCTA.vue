@@ -1,4 +1,4 @@
-<script setup lang="ts">import CTAButton from '../common/CTAButton.vue'</script>
+<script setup lang="ts">import CTAButton from '../common/CTAButton.vue';</script>
 <template>
   <section class="bg-deep text-white py-24 text-center"><div class="mx-auto max-w-3xl px-5">
     <h2 class="text-4xl md:text-6xl">Un projet d’infrastructure ou de transformation digitale ?</h2>

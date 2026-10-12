@@ -1,0 +1,1 @@
+import{d as o,o as a,b as c,e,t as s}from"./index-FLkpacFW.js";const r={class:"p-6 border-l-2 border-tech bg-mist"},n={class:"text-2xl"},i={class:"mt-2 text-navy/70"},m=o({__name:"ServiceCard",props:{title:{},text:{}},setup(t){return(l,_)=>(a(),c("article",r,[e("h3",n,s(t.title),1),e("p",i,s(t.text),1)]))}});export{m as _};

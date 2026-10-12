@@ -1,4 +1,4 @@
-<script setup lang="ts">defineProps<{ title: string; text?: string; dark?: boolean }>()</script>
+<script setup lang="ts">defineProps<{ title: string; text?: string; dark?: boolean }>();</script>
 <template>
   <div class="max-w-2xl mb-10 md:mb-14">
     <h2 class="text-4xl md:text-5xl" :class="dark ? 'text-white' : 'text-navy'">{{ title }}</h2>
