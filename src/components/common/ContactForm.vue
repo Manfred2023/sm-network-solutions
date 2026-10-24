@@ -15,7 +15,7 @@ const f = 'w-full border border-line bg-white px-4 py-3 text-base focus:border-t
     <label class="block sm:col-span-2">Type de besoin
       <select :class="f"><option v-for="t in types" :key="t">{{ t }}</option></select></label>
     <label class="block sm:col-span-2">Message<textarea required rows="5" :class="f"></textarea></label>
-    <button class="sm:col-span-2 bg-tech text-white px-6 py-3 font-semibold hover:bg-blue-600">Envoyer ma demande</button>
+    <button class="sm:col-span-2 bg-tech text-white px-6 py-3 font-semibold hover:bg-tech/90">Envoyer ma demande</button>
     <p v-if="sent" class="sm:col-span-2 text-sm text-navy/70" role="status">Formulaire validé. L’envoi sera actif une fois le service de messagerie connecté.</p>
   </form>
 </template>

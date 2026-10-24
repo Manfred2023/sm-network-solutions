@@ -1,0 +1,370 @@
+/* MyPass design tokens — généré depuis mypass.tokens.json. Ne pas éditer à la main. */
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,600..800&family=Geist:wght@400..700&family=Geist+Mono:wght@500&display=swap');
+:root {
+  --mp-nuit-50: #F4F4F6;
+  --mp-nuit-100: #EBECEF;
+  --mp-nuit-200: #DCDDE2;
+  --mp-nuit-300: #B4B8C1;
+  --mp-nuit-400: #8A8E9A;
+  --mp-nuit-500: #5E6270;
+  --mp-nuit-600: #454956;
+  --mp-nuit-700: #2E313B;
+  --mp-nuit-800: #1E2028;
+  --mp-nuit-850: #16171E;
+  --mp-nuit-900: #111218;
+  --mp-nuit-950: #0B0C10;
+  --mp-craie-50: #FBFAF7;
+  --mp-craie-100: #F7F6F2;
+  --mp-craie-200: #EFEDE6;
+  --mp-volt-50: #F9FDE6;
+  --mp-volt-100: #EEF9C0;
+  --mp-volt-200: #E3F58A;
+  --mp-volt-300: #DBF35F;
+  --mp-volt-400: #D4F03C;
+  --mp-volt-500: #BCD92A;
+  --mp-volt-600: #9AB51A;
+  --mp-volt-700: #5B6B00;
+  --mp-volt-800: #45510A;
+  --mp-volt-900: #2F3708;
+  --mp-braise-100: #FFE4DD;
+  --mp-braise-400: #FF5A3C;
+  --mp-braise-700: #B23116;
+  --mp-lagune-100: #D8F3F0;
+  --mp-lagune-400: #25B5A9;
+  --mp-lagune-700: #0E6E66;
+  --mp-iris-100: #ECE9FE;
+  --mp-iris-400: #8B7CF6;
+  --mp-iris-700: #5140C9;
+  --mp-success-50: #E7F5EC;
+  --mp-success-500: #1F9D5F;
+  --mp-success-600: #12784A;
+  --mp-success-dark: #4CC38A;
+  --mp-warning-50: #FFF3D9;
+  --mp-warning-500: #E39A00;
+  --mp-warning-700: #9A5500;
+  --mp-warning-dark: #F2B547;
+  --mp-danger-50: #FDECEA;
+  --mp-danger-500: #E5483B;
+  --mp-danger-600: #C8281E;
+  --mp-danger-700: #A11F17;
+  --mp-danger-dark: #FF6B5E;
+  --mp-info-50: #EAF0FD;
+  --mp-info-600: #2257D6;
+  --mp-info-dark: #7AA5FF;
+  --mp-white: #FFFFFF;
+  --mp-black: #000000;
+  --mp-font-display: 'Bricolage Grotesque', 'Geist', system-ui, sans-serif;
+  --mp-font-sans: 'Geist', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --mp-font-mono: 'Geist Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+  --mp-space-0: 0px;
+  --mp-space-0-5: 2px;
+  --mp-space-1: 4px;
+  --mp-space-2: 8px;
+  --mp-space-3: 12px;
+  --mp-space-4: 16px;
+  --mp-space-5: 20px;
+  --mp-space-6: 24px;
+  --mp-space-8: 32px;
+  --mp-space-10: 40px;
+  --mp-space-12: 48px;
+  --mp-space-16: 64px;
+  --mp-space-20: 80px;
+  --mp-space-24: 96px;
+  --mp-space-32: 128px;
+  --mp-radius-none: 0px;
+  --mp-radius-xs: 4px;
+  --mp-radius-sm: 6px;
+  --mp-radius-md: 10px;
+  --mp-radius-lg: 16px;
+  --mp-radius-xl: 24px;
+  --mp-radius-full: 9999px;
+  --mp-size-control-s: 32px;
+  --mp-size-control-m: 44px;
+  --mp-size-control-l: 52px;
+  --mp-size-icon-s: 16px;
+  --mp-size-icon-m: 20px;
+  --mp-size-icon-l: 24px;
+  --mp-size-content-reading: 680px;
+  --mp-size-content-max: 1200px;
+  --mp-size-dashboard-max: 1440px;
+  --mp-size-sidebar: 264px;
+  --mp-z-base: 0;
+  --mp-z-dropdown: 1000;
+  --mp-z-sticky: 1100;
+  --mp-z-overlay: 1300;
+  --mp-z-modal: 1400;
+  --mp-z-toast: 1500;
+  --mp-duration-instant: 80ms;
+  --mp-duration-fast: 140ms;
+  --mp-duration-base: 220ms;
+  --mp-duration-slow: 360ms;
+  --mp-duration-reveal: 520ms;
+  --mp-easing-standard: cubic-bezier(0.2, 0, 0, 1);
+  --mp-easing-enter: cubic-bezier(0, 0, 0.2, 1);
+  --mp-easing-exit: cubic-bezier(0.4, 0, 1, 1);
+  --mp-easing-passage: cubic-bezier(0.65, 0, 0.35, 1);
+  --mp-type-display-xl-size: 56px;
+  --mp-type-display-xl-line: 60px;
+  --mp-type-display-l-size: 40px;
+  --mp-type-display-l-line: 44px;
+  --mp-type-heading-1-size: 32px;
+  --mp-type-heading-1-line: 36px;
+  --mp-type-heading-2-size: 26px;
+  --mp-type-heading-2-line: 32px;
+  --mp-type-heading-3-size: 20px;
+  --mp-type-heading-3-line: 28px;
+  --mp-type-heading-4-size: 17px;
+  --mp-type-heading-4-line: 24px;
+  --mp-type-body-l-size: 18px;
+  --mp-type-body-l-line: 28px;
+  --mp-type-body-size: 16px;
+  --mp-type-body-line: 24px;
+  --mp-type-body-s-size: 14px;
+  --mp-type-body-s-line: 20px;
+  --mp-type-label-size: 14px;
+  --mp-type-label-line: 20px;
+  --mp-type-caption-size: 12px;
+  --mp-type-caption-line: 16px;
+  --mp-type-overline-size: 12px;
+  --mp-type-overline-line: 16px;
+  --mp-type-button-l-size: 17px;
+  --mp-type-button-l-line: 24px;
+  --mp-type-button-size: 15px;
+  --mp-type-button-line: 20px;
+  --mp-type-button-s-size: 13px;
+  --mp-type-button-s-line: 16px;
+  --mp-type-price-xl-size: 36px;
+  --mp-type-price-xl-line: 40px;
+  --mp-type-price-size: 20px;
+  --mp-type-price-line: 28px;
+  --mp-type-stat-size: 30px;
+  --mp-type-stat-line: 36px;
+  --mp-type-data-size: 14px;
+  --mp-type-data-line: 20px;
+  --mp-type-code-size: 14px;
+  --mp-type-code-line: 20px;
+  --mp-type-code-l-size: 18px;
+  --mp-type-code-l-line: 24px;
+  --mp-bg-canvas: var(--mp-craie-100);
+  --mp-bg-surface: #FFFFFF;
+  --mp-bg-surface-raised: #FFFFFF;
+  --mp-bg-subtle: var(--mp-nuit-50);
+  --mp-bg-inverse: var(--mp-nuit-900);
+  --mp-bg-brand: var(--mp-volt-400);
+  --mp-bg-brand-subtle: var(--mp-volt-100);
+  --mp-text-primary: var(--mp-nuit-900);
+  --mp-text-secondary: var(--mp-nuit-500);
+  --mp-text-placeholder: var(--mp-nuit-500);
+  --mp-text-disabled: var(--mp-nuit-400);
+  --mp-text-inverse: var(--mp-craie-100);
+  --mp-text-on-brand: var(--mp-nuit-900);
+  --mp-text-brand: var(--mp-volt-700);
+  --mp-text-link: var(--mp-nuit-900);
+  --mp-border-subtle: var(--mp-nuit-200);
+  --mp-border-default: var(--mp-nuit-400);
+  --mp-border-strong: var(--mp-nuit-900);
+  --mp-focus-ring: var(--mp-nuit-900);
+  --mp-focus-halo: var(--mp-volt-400);
+  --mp-action-primary-bg: var(--mp-nuit-900);
+  --mp-action-primary-bg-hover: var(--mp-nuit-700);
+  --mp-action-primary-bg-active: var(--mp-nuit-950);
+  --mp-action-primary-text: var(--mp-craie-100);
+  --mp-action-brand-bg: var(--mp-volt-400);
+  --mp-action-brand-bg-hover: var(--mp-volt-500);
+  --mp-action-brand-bg-active: var(--mp-volt-600);
+  --mp-action-brand-text: var(--mp-nuit-900);
+  --mp-action-secondary-border: var(--mp-nuit-900);
+  --mp-action-secondary-bg-hover: var(--mp-nuit-50);
+  --mp-action-tertiary-bg-hover: var(--mp-nuit-100);
+  --mp-action-disabled-bg: var(--mp-nuit-100);
+  --mp-action-disabled-text: var(--mp-nuit-400);
+  --mp-action-danger-bg: var(--mp-danger-600);
+  --mp-action-danger-text: #FFFFFF;
+  --mp-selected-bg: var(--mp-volt-100);
+  --mp-selected-indicator: var(--mp-nuit-900);
+  --mp-status-success-fg: var(--mp-success-600);
+  --mp-status-success-bg: var(--mp-success-50);
+  --mp-status-warning-fg: var(--mp-warning-700);
+  --mp-status-warning-bg: var(--mp-warning-50);
+  --mp-status-danger-fg: var(--mp-danger-600);
+  --mp-status-danger-bg: var(--mp-danger-50);
+  --mp-status-info-fg: var(--mp-info-600);
+  --mp-status-info-bg: var(--mp-info-50);
+  --mp-accent-braise: var(--mp-braise-400);
+  --mp-accent-lagune: var(--mp-lagune-400);
+  --mp-accent-iris: var(--mp-iris-400);
+  --mp-shadow-0: none;
+  --mp-shadow-1: 0 1px 2px rgba(17,18,24,0.06);
+  --mp-shadow-2: 0 1px 2px rgba(17,18,24,0.06), 0 4px 12px rgba(17,18,24,0.08);
+  --mp-shadow-3: 0 2px 6px rgba(17,18,24,0.08), 0 12px 32px rgba(17,18,24,0.14);
+  color-scheme: light;
+}
+@media (min-width: 1024px) {
+:root {
+  --mp-type-display-xl-size: 88px;
+  --mp-type-display-xl-line: 88px;
+  --mp-type-display-l-size: 64px;
+  --mp-type-display-l-line: 64px;
+  --mp-type-heading-1-size: 44px;
+  --mp-type-heading-1-line: 48px;
+  --mp-type-heading-2-size: 32px;
+  --mp-type-heading-2-line: 38px;
+  --mp-type-heading-3-size: 22px;
+  --mp-type-heading-3-line: 30px;
+  --mp-type-heading-4-size: 18px;
+  --mp-type-heading-4-line: 26px;
+  --mp-type-price-xl-size: 44px;
+  --mp-type-price-xl-line: 48px;
+  --mp-type-stat-size: 36px;
+  --mp-type-stat-line: 40px;
+}
+}
+/* Mode sombre : opt-in via data-theme="dark", ou automatique si data-theme="system" */
+:root[data-theme="dark"] {
+  --mp-bg-canvas: var(--mp-nuit-950);
+  --mp-bg-surface: var(--mp-nuit-900);
+  --mp-bg-surface-raised: var(--mp-nuit-800);
+  --mp-bg-subtle: var(--mp-nuit-850);
+  --mp-bg-inverse: var(--mp-craie-100);
+  --mp-bg-brand: var(--mp-volt-400);
+  --mp-bg-brand-subtle: #262B12;
+  --mp-text-primary: var(--mp-craie-100);
+  --mp-text-secondary: #A3A7B2;
+  --mp-text-placeholder: var(--mp-nuit-400);
+  --mp-text-disabled: var(--mp-nuit-600);
+  --mp-text-inverse: var(--mp-nuit-900);
+  --mp-text-on-brand: var(--mp-nuit-900);
+  --mp-text-brand: var(--mp-volt-400);
+  --mp-text-link: var(--mp-volt-400);
+  --mp-border-subtle: var(--mp-nuit-700);
+  --mp-border-default: #6E7280;
+  --mp-border-strong: var(--mp-craie-100);
+  --mp-focus-ring: var(--mp-volt-400);
+  --mp-focus-halo: #00000000;
+  --mp-action-primary-bg: var(--mp-volt-400);
+  --mp-action-primary-bg-hover: var(--mp-volt-300);
+  --mp-action-primary-bg-active: var(--mp-volt-500);
+  --mp-action-primary-text: var(--mp-nuit-900);
+  --mp-action-brand-bg: var(--mp-volt-400);
+  --mp-action-brand-bg-hover: var(--mp-volt-300);
+  --mp-action-brand-bg-active: var(--mp-volt-500);
+  --mp-action-brand-text: var(--mp-nuit-900);
+  --mp-action-secondary-border: var(--mp-craie-100);
+  --mp-action-secondary-bg-hover: var(--mp-nuit-800);
+  --mp-action-tertiary-bg-hover: var(--mp-nuit-800);
+  --mp-action-disabled-bg: var(--mp-nuit-800);
+  --mp-action-disabled-text: var(--mp-nuit-600);
+  --mp-action-danger-bg: var(--mp-danger-dark);
+  --mp-action-danger-text: var(--mp-nuit-900);
+  --mp-selected-bg: #262B12;
+  --mp-selected-indicator: var(--mp-volt-400);
+  --mp-status-success-fg: var(--mp-success-dark);
+  --mp-status-success-bg: #12261B;
+  --mp-status-warning-fg: var(--mp-warning-dark);
+  --mp-status-warning-bg: #2B2210;
+  --mp-status-danger-fg: var(--mp-danger-dark);
+  --mp-status-danger-bg: #2E1513;
+  --mp-status-info-fg: var(--mp-info-dark);
+  --mp-status-info-bg: #141E33;
+  --mp-accent-braise: var(--mp-braise-400);
+  --mp-accent-lagune: var(--mp-lagune-400);
+  --mp-accent-iris: var(--mp-iris-400);
+  --mp-shadow-0: none;
+  --mp-shadow-1: 0 0 0 1px rgba(255,255,255,0.04);
+  --mp-shadow-2: 0 0 0 1px rgba(255,255,255,0.06), 0 8px 20px rgba(0,0,0,0.4);
+  --mp-shadow-3: 0 0 0 1px rgba(255,255,255,0.08), 0 16px 40px rgba(0,0,0,0.55);
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: dark) {
+:root[data-theme="system"] {
+  --mp-bg-canvas: var(--mp-nuit-950);
+  --mp-bg-surface: var(--mp-nuit-900);
+  --mp-bg-surface-raised: var(--mp-nuit-800);
+  --mp-bg-subtle: var(--mp-nuit-850);
+  --mp-bg-inverse: var(--mp-craie-100);
+  --mp-bg-brand: var(--mp-volt-400);
+  --mp-bg-brand-subtle: #262B12;
+  --mp-text-primary: var(--mp-craie-100);
+  --mp-text-secondary: #A3A7B2;
+  --mp-text-placeholder: var(--mp-nuit-400);
+  --mp-text-disabled: var(--mp-nuit-600);
+  --mp-text-inverse: var(--mp-nuit-900);
+  --mp-text-on-brand: var(--mp-nuit-900);
+  --mp-text-brand: var(--mp-volt-400);
+  --mp-text-link: var(--mp-volt-400);
+  --mp-border-subtle: var(--mp-nuit-700);
+  --mp-border-default: #6E7280;
+  --mp-border-strong: var(--mp-craie-100);
+  --mp-focus-ring: var(--mp-volt-400);
+  --mp-focus-halo: #00000000;
+  --mp-action-primary-bg: var(--mp-volt-400);
+  --mp-action-primary-bg-hover: var(--mp-volt-300);
+  --mp-action-primary-bg-active: var(--mp-volt-500);
+  --mp-action-primary-text: var(--mp-nuit-900);
+  --mp-action-brand-bg: var(--mp-volt-400);
+  --mp-action-brand-bg-hover: var(--mp-volt-300);
+  --mp-action-brand-bg-active: var(--mp-volt-500);
+  --mp-action-brand-text: var(--mp-nuit-900);
+  --mp-action-secondary-border: var(--mp-craie-100);
+  --mp-action-secondary-bg-hover: var(--mp-nuit-800);
+  --mp-action-tertiary-bg-hover: var(--mp-nuit-800);
+  --mp-action-disabled-bg: var(--mp-nuit-800);
+  --mp-action-disabled-text: var(--mp-nuit-600);
+  --mp-action-danger-bg: var(--mp-danger-dark);
+  --mp-action-danger-text: var(--mp-nuit-900);
+  --mp-selected-bg: #262B12;
+  --mp-selected-indicator: var(--mp-volt-400);
+  --mp-status-success-fg: var(--mp-success-dark);
+  --mp-status-success-bg: #12261B;
+  --mp-status-warning-fg: var(--mp-warning-dark);
+  --mp-status-warning-bg: #2B2210;
+  --mp-status-danger-fg: var(--mp-danger-dark);
+  --mp-status-danger-bg: #2E1513;
+  --mp-status-info-fg: var(--mp-info-dark);
+  --mp-status-info-bg: #141E33;
+  --mp-accent-braise: var(--mp-braise-400);
+  --mp-accent-lagune: var(--mp-lagune-400);
+  --mp-accent-iris: var(--mp-iris-400);
+  --mp-shadow-0: none;
+  --mp-shadow-1: 0 0 0 1px rgba(255,255,255,0.04);
+  --mp-shadow-2: 0 0 0 1px rgba(255,255,255,0.06), 0 8px 20px rgba(0,0,0,0.4);
+  --mp-shadow-3: 0 0 0 1px rgba(255,255,255,0.08), 0 16px 40px rgba(0,0,0,0.55);
+  color-scheme: dark;
+}
+}
+
+/* Classes typographiques */
+.mp-display-xl { font-family: var(--mp-font-display); font-weight: 800; font-size: var(--mp-type-display-xl-size); line-height: var(--mp-type-display-xl-line); letter-spacing: -0.02em; font-stretch:90%; }
+.mp-display-l { font-family: var(--mp-font-display); font-weight: 800; font-size: var(--mp-type-display-l-size); line-height: var(--mp-type-display-l-line); letter-spacing: -0.02em; font-stretch:90%; }
+.mp-heading-1 { font-family: var(--mp-font-display); font-weight: 700; font-size: var(--mp-type-heading-1-size); line-height: var(--mp-type-heading-1-line); letter-spacing: -0.02em; font-stretch:95%; }
+.mp-heading-2 { font-family: var(--mp-font-display); font-weight: 700; font-size: var(--mp-type-heading-2-size); line-height: var(--mp-type-heading-2-line); letter-spacing: -0.015em;  }
+.mp-heading-3 { font-family: var(--mp-font-sans); font-weight: 600; font-size: var(--mp-type-heading-3-size); line-height: var(--mp-type-heading-3-line); letter-spacing: -0.01em;  }
+.mp-heading-4 { font-family: var(--mp-font-sans); font-weight: 600; font-size: var(--mp-type-heading-4-size); line-height: var(--mp-type-heading-4-line); letter-spacing: -0.005em;  }
+.mp-body-l { font-family: var(--mp-font-sans); font-weight: 400; font-size: var(--mp-type-body-l-size); line-height: var(--mp-type-body-l-line); letter-spacing: 0;  }
+.mp-body { font-family: var(--mp-font-sans); font-weight: 400; font-size: var(--mp-type-body-size); line-height: var(--mp-type-body-line); letter-spacing: 0;  }
+.mp-body-s { font-family: var(--mp-font-sans); font-weight: 400; font-size: var(--mp-type-body-s-size); line-height: var(--mp-type-body-s-line); letter-spacing: 0;  }
+.mp-label { font-family: var(--mp-font-sans); font-weight: 500; font-size: var(--mp-type-label-size); line-height: var(--mp-type-label-line); letter-spacing: 0;  }
+.mp-caption { font-family: var(--mp-font-sans); font-weight: 500; font-size: var(--mp-type-caption-size); line-height: var(--mp-type-caption-line); letter-spacing: 0.01em;  }
+.mp-overline { font-family: var(--mp-font-sans); font-weight: 600; font-size: var(--mp-type-overline-size); line-height: var(--mp-type-overline-line); letter-spacing: 0.08em; text-transform:uppercase; }
+.mp-button-l { font-family: var(--mp-font-sans); font-weight: 600; font-size: var(--mp-type-button-l-size); line-height: var(--mp-type-button-l-line); letter-spacing: -0.005em;  }
+.mp-button { font-family: var(--mp-font-sans); font-weight: 600; font-size: var(--mp-type-button-size); line-height: var(--mp-type-button-line); letter-spacing: 0;  }
+.mp-button-s { font-family: var(--mp-font-sans); font-weight: 600; font-size: var(--mp-type-button-s-size); line-height: var(--mp-type-button-s-line); letter-spacing: 0.005em;  }
+.mp-price-xl { font-family: var(--mp-font-sans); font-weight: 600; font-size: var(--mp-type-price-xl-size); line-height: var(--mp-type-price-xl-line); letter-spacing: -0.025em; font-variant-numeric:tabular-nums; }
+.mp-price { font-family: var(--mp-font-sans); font-weight: 600; font-size: var(--mp-type-price-size); line-height: var(--mp-type-price-line); letter-spacing: -0.01em; font-variant-numeric:tabular-nums; }
+.mp-stat { font-family: var(--mp-font-sans); font-weight: 600; font-size: var(--mp-type-stat-size); line-height: var(--mp-type-stat-line); letter-spacing: -0.02em; font-variant-numeric:tabular-nums; }
+.mp-data { font-family: var(--mp-font-sans); font-weight: 400; font-size: var(--mp-type-data-size); line-height: var(--mp-type-data-line); letter-spacing: 0; font-variant-numeric:tabular-nums; }
+.mp-code { font-family: var(--mp-font-mono); font-weight: 500; font-size: var(--mp-type-code-size); line-height: var(--mp-type-code-line); letter-spacing: 0.06em; text-transform:uppercase; }
+.mp-code-l { font-family: var(--mp-font-mono); font-weight: 500; font-size: var(--mp-type-code-l-size); line-height: var(--mp-type-code-l-line); letter-spacing: 0.08em; text-transform:uppercase; }
+
+/* Focus signature : anneau Nuit 2px + halo Volt 4px (clair) / anneau Volt (sombre) */
+.mp-focus:focus-visible, :where(a, button, input, select, textarea, [tabindex]):focus-visible {
+  outline: 2px solid var(--mp-focus-ring);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 6px var(--mp-focus-halo);
+}
+@media (prefers-reduced-motion: reduce) {
+  :root { --mp-duration-fast: 0ms; --mp-duration-base: 0ms; --mp-duration-slow: 0ms; --mp-duration-reveal: 0ms; }
+}
+
+/* Alias attendus par les styles de composants (components/bundle.css) */
+:root { --font-display: var(--mp-font-display); --font-sans: var(--mp-font-sans); --font-mono: var(--mp-font-mono); }

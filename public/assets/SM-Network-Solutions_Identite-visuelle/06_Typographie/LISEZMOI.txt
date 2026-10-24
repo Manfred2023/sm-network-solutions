@@ -1,0 +1,6 @@
+Manrope - police libre (SIL Open Font License 1.1), dessinée par Mikhail Sharanda.
+Source officielle : https://fonts.google.com/specimen/Manrope
+
+Dans le logo : NETWORK en Manrope ExtraBold (800), SOLUTIONS en Manrope SemiBold (600).
+Dans les fichiers SVG/PNG fournis, le texte est vectorisé : la police n'a pas besoin d'être installée pour afficher le logo.
+Pour les documents (Word, PowerPoint, site web) : installer ces fichiers. Police de secours : Arial.

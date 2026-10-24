@@ -1,0 +1,18 @@
+<!-- @dsCard group="Formulaires" height=380 subtitle="Libellé au-dessus, aide, erreur avec icône et texte, focus signature" -->
+<!doctype html>
+<html lang="fr">
+<head><meta charset="utf-8"><title>Field</title><meta name="viewport" content="width=device-width, initial-scale=1"></head>
+<body>
+
+<div class="mp-stage" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px">
+  <div class="mp-field"><label for="f1">Nom complet</label><input id="f1" class="mp-input" value="Amina Nkodo"></div>
+  <div class="mp-field"><label for="f2">Adresse e-mail</label><input id="f2" class="mp-input is-focus" placeholder="vous@exemple.com"><span class="mp-help">Vos billets seront envoyés à cette adresse.</span></div>
+  <div class="mp-field"><label for="f3">Téléphone Mobile Money</label><div class="mp-input is-error"><span class="prefix">+237</span><input id="f3" style="border:0;outline:0;background:none;font:inherit;color:inherit;width:100%" value="6 99 12"></div><span class="mp-help error"><svg class="mp-icon s" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4 2.8 19.5h18.4z"/><path d="M12 10v4M12 17h.01"/></svg> Numéro incomplet : saisissez 9 chiffres.</span></div>
+  <div class="mp-field"><label for="f4">Code promo <span class="opt">(facultatif)</span></label><input id="f4" class="mp-input mp-mono" value="EARLYBIRD"><span class="mp-help ok"><svg class="mp-icon s" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg> −20 % appliqués</span></div>
+  <div class="mp-field"><label for="f5">Capacité de la salle</label><input id="f5" class="mp-input" value="1 200" disabled></div>
+  <div class="mp-field"><span class="mp-label">Rechercher</span><div class="mp-input"><svg class="mp-icon " viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span class="mp-muted">Artiste, lieu, ville…</span></div></div>
+  <label class="mp-check"><span class="mp-box on"><svg class="mp-icon s" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span> J'accepte les conditions de vente</label>
+  <label class="mp-check"><span class="mp-box"></span> Recevoir les annonces de l'organisateur</label>
+</div>
+</body>
+</html>

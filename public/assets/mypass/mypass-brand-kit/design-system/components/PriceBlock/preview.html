@@ -1,0 +1,24 @@
+<!-- @dsCard group="Commerce" height=520 subtitle="Catégories de billets, quantité, récapitulatif et CTA Volt unique" -->
+<!doctype html>
+<html lang="fr">
+<head><meta charset="utf-8"><title>PriceBlock</title><meta name="viewport" content="width=device-width, initial-scale=1"></head>
+<body>
+
+<div class="mp-stage" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,340px);gap:24px;align-items:start">
+  <div class="mp-stack" style="gap:12px">
+    <div class="mp-tier is-soldout"><span class="name" style="color:var(--mp-text-secondary)">Early bird</span><span class="mp-badge neutral"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>Épuisé</span><span class="desc">Tarif de lancement</span></div>
+    <div class="mp-tier is-selected"><span class="name">Standard</span><span class="price">15 000 FCFA</span><span class="desc">Accès fosse · ouverture des portes 19 h</span><div class="mp-stepper" aria-label="Quantité Standard"><button aria-label="Retirer">−</button><output>2</output><button aria-label="Ajouter">+</button></div></div>
+    <div class="mp-tier"><span class="name">VIP</span><span class="price">25 000 FCFA</span><span class="desc">Balcon, entrée prioritaire, 1 boisson</span><div class="mp-stepper" aria-label="Quantité VIP"><button aria-label="Retirer" disabled>−</button><output>0</output><button aria-label="Ajouter">+</button></div></div>
+  </div>
+  <aside class="mp-panel mp-stack" style="gap:12px">
+    <div class="mp-overline">Récapitulatif</div>
+    <div class="mp-sum"><span>2 × Standard</span><span>30 000 FCFA</span></div>
+    <div class="mp-sum mp-muted"><span>Frais de service</span><span>1 200 FCFA</span></div>
+    <hr class="mp-divider">
+    <div class="mp-sum total"><span>Total</span><span>31 200 FCFA</span></div>
+    <button class="mp-btn brand l block">Continuer <svg class="mp-icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+    <span class="mp-help"><svg class="mp-icon s" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg> Paiement sécurisé · billets envoyés immédiatement</span>
+  </aside>
+</div>
+</body>
+</html>

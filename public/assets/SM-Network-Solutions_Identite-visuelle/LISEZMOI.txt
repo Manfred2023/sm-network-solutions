@@ -1,0 +1,19 @@
+SM NETWORK SOLUTIONS — Identité visuelle v1.0 (octobre 2026)
+
+01_Logo-horizontal   Logo principal (symbole à gauche, nom à droite)
+02_Logo-empile       Symbole au-dessus du nom
+03_Symbole           Symbole seul
+04_Icones-et-favicon Icônes d'application, avatars ronds, favicon (.ico, .svg, PNG 16 à 512 px)
+05_Charte-graphique  Charte d'utilisation (PDF) et planche des 3 pistes
+06_Typographie       Police Manrope (licence libre OFL)
+
+Chaque logo existe en SVG (vectoriel, texte vectorisé) et en PNG haute résolution.
+Variantes :
+  couleur_transparent         bleu nuit + nœud bleu électrique, pour fonds clairs
+  couleur_fond-blanc          idem sur fond blanc
+  inverse_transparent         blanc + nœud bleu électrique, pour fonds sombres
+  inverse_fond-bleu-nuit      idem sur fond bleu nuit
+  mono-noir / mono-blanc / mono-bleu-nuit   une seule couleur (tampons, impressions simples)
+
+Couleurs : Bleu nuit #0B1530 · Bleu électrique #246BFD · Gris technique #E9EEF5 · Blanc #FFFFFF
+Impression professionnelle : utiliser les SVG (ou les convertir en PDF/EPS) ; Word/PowerPoint : PNG ou SVG.

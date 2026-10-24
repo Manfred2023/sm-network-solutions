@@ -1,0 +1,26 @@
+<!-- @dsCard group="Commerce" height=640 subtitle="Paiement : minuteur de réservation, moyens de paiement, total permanent" -->
+<!doctype html>
+<html lang="fr">
+<head><meta charset="utf-8"><title>Checkout</title><meta name="viewport" content="width=device-width, initial-scale=1"></head>
+<body>
+
+<div class="mp-stage" style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,320px);gap:24px;align-items:start">
+  <div class="mp-stack" style="gap:20px">
+    <div class="mp-row" style="justify-content:space-between"><h1 class="mp-heading-2" style="margin:0;font-family:var(--font-display)">Paiement</h1><span class="mp-badge warning"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg>Places réservées 09:42</span></div>
+    <ol class="mp-row" style="list-style:none;padding:0;margin:0;gap:8px;font-size:14px"><li class="mp-muted">1. Billets</li><li>›</li><li class="mp-muted">2. Coordonnées</li><li>›</li><li style="font-weight:600" aria-current="step">3. Paiement</li></ol>
+    <fieldset style="border:0;padding:0;margin:0" class="mp-stack"><legend class="mp-label" style="margin-bottom:8px">Moyen de paiement</legend><label class="mp-tier is-selected" style="grid-template-columns:auto 1fr auto;cursor:pointer"><span style="width:20px;height:20px;border-radius:50%;border:6px solid var(--mp-border-strong)"></span><span class="mp-stack" style="gap:0"><span class="name">Mobile Money</span><span class="desc">MTN MoMo, Orange Money</span></span><svg class="mp-icon " viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2"/><path d="M11 18.5h2"/></svg></label><label class="mp-tier" style="grid-template-columns:auto 1fr auto;cursor:pointer"><span style="width:20px;height:20px;border-radius:50%;border:1.5px solid var(--mp-border-default)"></span><span class="mp-stack" style="gap:0"><span class="name">Carte bancaire</span><span class="desc">Visa, Mastercard</span></span><svg class="mp-icon " viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h4"/></svg></label><label class="mp-tier" style="grid-template-columns:auto 1fr auto;cursor:pointer"><span style="width:20px;height:20px;border-radius:50%;border:1.5px solid var(--mp-border-default)"></span><span class="mp-stack" style="gap:0"><span class="name">Portefeuille mobile</span><span class="desc">Apple Pay, Google Pay</span></span><svg class="mp-icon " viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h12v4"/><rect x="3" y="7" width="18" height="13" rx="2"/><circle cx="16.5" cy="13.5" r="1.25"/></svg></label></fieldset>
+    <div class="mp-field"><label for="c1">Numéro Mobile Money</label><div class="mp-input"><span class="prefix">+237</span><input id="c1" style="border:0;outline:0;background:none;font:inherit;color:inherit;width:100%" value="6 99 12 34 56"></div><span class="mp-help">Vous recevrez une demande de confirmation sur ce téléphone.</span></div>
+  </div>
+  <aside class="mp-panel mp-stack" style="gap:12px">
+    <div class="mp-row" style="gap:12px;flex-wrap:nowrap"><div style="width:56px;height:56px;border-radius:10px;overflow:hidden;flex:none"><svg viewBox="0 0 56 56" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="56" height="56" fill="#FF5A3C"/><path d="M23.52 56 V29.12 A14.56 14.56 0 0 1 52.64 29.12 V56Z" fill="#111218"/><path d="M31.360000000000003 56 V34.72 A6.72 6.72 0 0 1 44.800000000000004 34.72 V56Z" fill="#D4F03C"/><circle cx="11.200000000000001" cy="40.32" r="3.9200000000000004" fill="#111218" opacity="0.9"/></svg></div><div><div style="font-weight:600">Douala Jazz Nights</div><div class="mp-muted" style="font-size:13px">Sam. 14 nov. · 20:00</div></div></div>
+    <hr class="mp-divider">
+    <div class="mp-sum"><span>2 × Standard</span><span>30 000 FCFA</span></div>
+    <div class="mp-sum mp-muted"><span>Frais de service</span><span>1 200 FCFA</span></div>
+    <hr class="mp-divider">
+    <div class="mp-sum total"><span>Total</span><span>31 200 FCFA</span></div>
+    <button class="mp-btn brand l block">Payer 31 200 FCFA</button>
+    <span class="mp-help"><svg class="mp-icon s" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg> Chiffrement de bout en bout. MyPass ne stocke pas vos données de carte.</span>
+  </aside>
+</div>
+</body>
+</html>

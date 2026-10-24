@@ -1,6 +1,6 @@
 @tailwind base;@tailwind components;@tailwind utilities;
 @layer base{html{scroll-behavior:smooth}body{@apply font-sans text-navy bg-white antialiased overflow-x-hidden}
-h1,h2,h3{@apply font-display font-semibold tracking-tight leading-[1.05]}
+h1,h2,h3{@apply font-display font-extrabold tracking-tight leading-[1.1]}
 :focus-visible{@apply outline outline-2 outline-offset-2 outline-tech}}
 @keyframes flow{to{stroke-dashoffset:-24}}
 .flow{stroke-dasharray:6 6;animation:flow 1.6s linear infinite}

@@ -1,0 +1,35 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html lang="fr">
+<head><meta charset="utf-8"><title>MyPass — couverture</title>
+<style>
+  html, body { margin: 0; background: var(--mp-bg-canvas); }
+  .cv { position: relative; width: 960px; height: 288px; overflow: hidden; background: var(--mp-bg-canvas); }
+  .cv svg { position: absolute; inset: 0; }
+  .volt { fill: var(--mp-volt-400); }
+  .ink { fill: var(--mp-text-primary); }
+  .braise { fill: var(--mp-braise-400); }
+  .ground { fill: var(--mp-bg-canvas); }
+  .txt { position: absolute; left: 40px; bottom: 32px; max-width: 420px; }
+  .name { font: 800 120px/0.92 var(--font-display); font-stretch: 90%; letter-spacing: -0.02em; color: var(--mp-text-primary); margin: 0; }
+  .tag { font: 500 14px/20px var(--font-sans); color: var(--mp-text-secondary); margin: 12px 0 0; }
+</style></head>
+<body>
+<div class="cv">
+  <svg viewBox="0 0 960 288" width="960" height="288" aria-hidden="true">
+    <!--
+      blocks: volt-400 slab 240×288 (mp-space-24 ×2.5), text-primary arch 240 wide r=120, braise-400 column 120×288 (mp-space-32 − 8)
+      arrangement: one tall Volt slab bleeding top and bottom, the Nuit arch standing across its right edge, a Braise column at the far edge
+      pattern row: literal motif — the brand is a door, so the only shapes are arches (half-round on a straight stem) at three scales, as in the symbol
+      scales: arch radii 120 / 40 / 32 (stem-to-door ratio of the symbol), gaps mp-space-10 (40px), corners mp-radius-none
+    -->
+    <rect class="volt" x="480" y="0" width="240" height="288"/>
+    <path class="ink" d="M560 288V168A120 120 0 0 1 800 168V288Z"/>
+    <path class="volt" d="M640 288V208A40 40 0 0 1 720 208V288Z"/>
+    <rect class="braise" x="840" y="0" width="120" height="288"/>
+    <path class="ground" d="M868 288V224A32 32 0 0 1 932 224V288Z"/>
+  </svg>
+  <div class="txt"><p class="name">MyPass</p><p class="tag">Identité et design system de la billetterie qui ouvre les portes, de Douala à New York.</p></div>
+</div>
+</body>
+</html>
