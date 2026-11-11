@@ -1,11 +1,26 @@
-<!doctype html><html lang="fr"><head><meta charset="UTF-8"/>
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>SM Network Solutions | Télécommunications, réseaux et solutions numériques</title>
 <meta name="description" content="Ingénierie technologique à Douala, Cameroun : télécommunications, fibre optique, infrastructures réseaux, solutions numériques, cybersécurité et énergie."/>
 <meta property="og:title" content="SM Network Solutions"/><meta property="og:type" content="website"/>
 <meta property="og:description" content="Ingénierie télécom, infrastructures réseaux, fibre optique et solutions numériques au Cameroun."/>
-<link rel="icon" href="/favicon.svg" type="image/svg+xml"/><link rel="alternate icon" href="/favicon.ico"/><link rel="apple-touch-icon" href="/apple-touch-icon.png"/><meta name="theme-color" content="#0B1530"/>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"/><link rel="alternate icon" href="/favicon.ico"/><link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+<meta name="theme-color" content="#FFFFFF"/>
+<!-- Applique thème et langue avant l'affichage pour éviter un flash -->
+<script>
+try {
+  var t = localStorage.getItem('theme');
+  if (t === 'dark' || (!t && matchMedia('(prefers-color-scheme: dark)').matches)) document.documentElement.classList.add('dark');
+  var l = localStorage.getItem('locale');
+  if (l === 'en' || l === 'fr') document.documentElement.lang = l;
+} catch (e) {}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet"/>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"SM NETWORK SOLUTIONS SARL","address":{"@type":"PostalAddress","addressLocality":"Douala","addressCountry":"CM"}}</script>
-</head><body><div id="app"></div><script type="module" src="/src/main.ts"></script></body></html>
+</head>
+<body><div id="app"></div><script type="module" src="/src/main.ts"></script></body>
+</html>

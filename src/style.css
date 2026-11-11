@@ -1,9 +1,54 @@
-@tailwind base;@tailwind components;@tailwind utilities;
-@layer base{html{scroll-behavior:smooth}body{@apply font-sans text-navy bg-white antialiased overflow-x-hidden}
-h1,h2,h3{@apply font-display font-extrabold tracking-tight leading-[1.1]}
-:focus-visible{@apply outline outline-2 outline-offset-2 outline-tech}}
-@keyframes flow{to{stroke-dashoffset:-24}}
-.flow{stroke-dasharray:6 6;animation:flow 1.6s linear infinite}
-@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
-.rise{animation:rise .7s ease-out both}
-@media (prefers-reduced-motion:reduce){.flow,.rise{animation:none}}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Jetons de thème (triplets RGB pour garder l'opacité Tailwind : text-ink/70, etc.) */
+@layer base {
+  :root {
+    --bg: 255 255 255;
+    --surface: 243 246 250;
+    --card: 255 255 255;
+    --ink: 11 21 48;
+    --muted: 74 86 112;
+    --line: 213 221 232;
+    --tech: 36 107 253;
+    --band: 11 21 48;
+    color-scheme: light;
+  }
+  .dark {
+    --bg: 6 11 26;
+    --surface: 10 18 38;
+    --card: 14 24 50;
+    --ink: 233 238 245;
+    --muted: 160 174 200;
+    --line: 34 48 79;
+    --tech: 110 157 255;
+    --band: 9 16 36;
+    color-scheme: dark;
+  }
+
+  html { scroll-behavior: smooth; }
+  body {
+    @apply font-sans text-ink bg-bg antialiased overflow-x-hidden;
+    transition: background-color .25s ease, color .25s ease;
+  }
+  h1, h2, h3 { @apply font-display font-extrabold tracking-tight leading-[1.1]; text-wrap: balance; }
+  :focus-visible { @apply outline outline-2 outline-offset-2 outline-tech; }
+}
+
+@layer components {
+  .container-site { @apply mx-auto w-full max-w-site px-4 sm:px-6 lg:px-8; }
+  .eyebrow { @apply text-xs font-bold uppercase tracking-[0.18em] text-tech; }
+  .card { @apply rounded-2xl border border-line bg-card; }
+}
+
+@keyframes flow { to { stroke-dashoffset: -24; } }
+.flow { stroke-dasharray: 6 6; animation: flow 1.6s linear infinite; }
+@keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+.rise { animation: rise .7s ease-out both; }
+@keyframes pulse-node { 0%, 100% { opacity: .35; } 50% { opacity: 1; } }
+.pulse-node { animation: pulse-node 2.4s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .flow, .rise, .pulse-node { animation: none; }
+  html { scroll-behavior: auto; }
+}

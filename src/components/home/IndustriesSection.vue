@@ -1,10 +1,15 @@
 <script setup lang="ts">
 import SectionTitle from '../common/SectionTitle.vue'
 import { industries } from '../../data/site'
+import { t, tr } from '../../i18n'
 </script>
 <template>
-  <section class="py-20"><div class="mx-auto max-w-7xl px-5">
-    <SectionTitle title="Secteurs d’intervention" text="Opérateurs, équipementiers, intégrateurs, entreprises publiques et privées." />
-    <ul class="flex flex-wrap gap-3"><li v-for="i in industries" :key="i" class="border border-line px-4 py-2">{{ i }}</li></ul>
-  </div></section>
+  <section class="py-20 md:py-28">
+    <div class="container-site">
+      <SectionTitle :title="t('industries.title')" :text="t('industries.text')" />
+      <ul class="flex flex-wrap gap-3">
+        <li v-for="i in industries" :key="i.fr" class="rounded-full border border-line bg-card px-5 py-2.5 font-semibold transition-colors hover:border-tech/60">{{ tr(i) }}</li>
+      </ul>
+    </div>
+  </section>
 </template>

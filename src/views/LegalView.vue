@@ -1,2 +1,7 @@
-<script setup lang="ts">import SectionTitle from '../components/common/SectionTitle.vue';</script>
-<template><section class="mx-auto max-w-7xl px-5 py-20"><SectionTitle title="Informations légales" text="Contenu à fournir : immatriculation, représentant légal, hébergeur, traitement des données." /></section></template>
+<script setup lang="ts">
+import PageHeader from '../components/common/PageHeader.vue'
+import { t } from '../i18n'
+</script>
+<template>
+  <PageHeader :title="t('page.legal.title')" :text="t('page.legal.text')" />
+</template>

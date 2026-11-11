@@ -1,21 +1,24 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-const types = ['Télécommunications', 'Fibre optique', 'Infrastructure', 'Réseau', 'Développement logiciel', 'Cloud', 'Cybersécurité', 'IA / Automatisation', 'Énergie', 'Formation', 'Autre']
+import { requestTypes } from '../../data/site'
+import { t, tr } from '../../i18n'
 const sent = ref(false)
 // TODO : brancher à une API (POST /api/quotes) ; aucun envoi réel pour l’instant.
 function submit() { sent.value = true }
-const f = 'w-full border border-line bg-white px-4 py-3 text-base focus:border-tech'
+const f = 'mt-1.5 w-full rounded-lg border border-line bg-bg px-4 py-3 text-base text-ink transition-colors focus:border-tech focus:outline-none focus:ring-2 focus:ring-tech/30'
+const l = 'block text-sm font-semibold'
 </script>
 <template>
-  <form class="grid gap-4 sm:grid-cols-2" @submit.prevent="submit">
-    <label class="block">Nom complet<input required :class="f" autocomplete="name" /></label>
-    <label class="block">Entreprise<input :class="f" autocomplete="organization" /></label>
-    <label class="block">Email<input required type="email" :class="f" autocomplete="email" /></label>
-    <label class="block">Téléphone<input type="tel" :class="f" autocomplete="tel" /></label>
-    <label class="block sm:col-span-2">Type de besoin
-      <select :class="f"><option v-for="t in types" :key="t">{{ t }}</option></select></label>
-    <label class="block sm:col-span-2">Message<textarea required rows="5" :class="f"></textarea></label>
-    <button class="sm:col-span-2 bg-tech text-white px-6 py-3 font-semibold hover:bg-tech/90">Envoyer ma demande</button>
-    <p v-if="sent" class="sm:col-span-2 text-sm text-navy/70" role="status">Formulaire validé. L’envoi sera actif une fois le service de messagerie connecté.</p>
+  <form class="card grid gap-5 p-6 sm:grid-cols-2 sm:p-8" @submit.prevent="submit">
+    <label :class="l">{{ t('form.name') }}<input required :class="f" autocomplete="name" /></label>
+    <label :class="l">{{ t('form.company') }}<input :class="f" autocomplete="organization" /></label>
+    <label :class="l">{{ t('form.email') }}<input required type="email" :class="f" autocomplete="email" /></label>
+    <label :class="l">{{ t('form.phone') }}<input type="tel" :class="f" autocomplete="tel" /></label>
+    <label :class="[l, 'sm:col-span-2']">{{ t('form.type') }}
+      <select :class="f"><option v-for="r in requestTypes" :key="r.fr" :value="r.fr">{{ tr(r) }}</option></select>
+    </label>
+    <label :class="[l, 'sm:col-span-2']">{{ t('form.message') }}<textarea required rows="5" :class="f"></textarea></label>
+    <button class="h-12 rounded-lg bg-brand px-6 font-semibold text-white transition-colors hover:bg-brand-hover sm:col-span-2 sm:justify-self-start">{{ t('form.send') }}</button>
+    <p v-if="sent" class="text-sm text-muted sm:col-span-2" role="status">{{ t('form.sent') }}</p>
   </form>
 </template>

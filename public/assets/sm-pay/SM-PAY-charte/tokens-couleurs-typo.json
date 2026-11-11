@@ -1,0 +1,46 @@
+{"name":"SM-PAY","version":1,
+"color":{"themes":[{"id":"light","name":"Clair"},{"id":"dark","name":"Sombre"}],
+"tokens":[
+{"name":"surface","value":{"light":"#f7f5ef","dark":"#0e1a16"},"usage":"Fond de page (papier chaud en clair, encre verte en sombre)."},
+{"name":"surface-raised","value":{"light":"#ffffff","dark":"#16251f"},"usage":"Cartes, modales, champs de saisie posés sur surface."},
+{"name":"line","value":{"light":"#dcd8cc","dark":"#2a3a33"},"usage":"Bordures fines et séparateurs (1px). Les reliefs se font par bordures, pas par ombres lourdes."},
+{"name":"ink","value":{"light":"#0e1a16","dark":"#eef0ea"},"usage":"Texte principal et wordmark sur surface. 17:1 en clair."},
+{"name":"ink-muted","value":{"light":"#56655f","dark":"#9aa8a1"},"usage":"Texte secondaire, libellés, métadonnées sur surface (≥ 4.5:1 dans les deux thèmes)."},
+{"name":"brand","value":{"light":"#0b6b4f","dark":"#3cc48e"},"usage":"Vert émeraude SM-PAY : tuile du logo, boutons principaux, liens, montants confirmés. Texte brand sur surface ≥ 6:1."},
+{"name":"brand-deep","value":{"light":"#07402f","dark":"#0b6b4f"},"usage":"État pressé des boutons brand, aplats de marque profonds (bandeaux, couvertures)."},
+{"name":"on-brand","value":{"light":"#ffffff","dark":"#0e1a16"},"usage":"Texte et icônes posés sur brand."},
+{"name":"gold","value":{"light":"#f2b33d","dark":"#f2b33d"},"usage":"Or « pièce » : la pastille du logo, accents ponctuels, badges. Jamais pour du texte sur fond clair (contraste insuffisant) ; texte ink dessus."},
+{"name":"gold-soft","value":{"light":"#fcefd2","dark":"#3a2f14"},"usage":"Fond de badge ou d'encart d'attention douce, texte ink dessus."},
+{"name":"mint","value":{"light":"#ddefe6","dark":"#173a2d"},"usage":"Teinte de relief : fonds de sections, lignes survolées, encarts info."},
+{"name":"success","value":{"light":"#1a7f50","dark":"#4fd08f"},"usage":"Paiement réussi, statut « payé »."},
+{"name":"warning","value":{"light":"#9a5b00","dark":"#f2b33d"},"usage":"Paiement en attente, action requise."},
+{"name":"danger","value":{"light":"#b83a26","dark":"#f07a64"},"usage":"Échec, rejet, erreurs de saisie."}]},
+"type":{"fonts":[],
+"families":{"display":"\"Space Grotesk\", \"Manrope\", system-ui, sans-serif","sans":"\"Manrope\", system-ui, -apple-system, \"Segoe UI\", sans-serif","mono":"\"JetBrains Mono\", ui-monospace, \"SFMono-Regular\", Menlo, monospace"},
+"groups":[
+{"name":"Titres","family":"display","styles":[
+{"name":"display","fontSize":"48px","lineHeight":"52px","fontWeight":700,"letterSpacing":"-0.02em","sample":"Payez. Encaissez. Simplement.","usage":"Accroches marketing, couvertures."},
+{"name":"h1","fontSize":"32px","lineHeight":"38px","fontWeight":700,"letterSpacing":"-0.01em","sample":"Tableau de bord","usage":"Titre de page."},
+{"name":"h2","fontSize":"24px","lineHeight":"30px","fontWeight":600,"sample":"Transactions récentes","usage":"Titre de section."},
+{"name":"amount","fontSize":"28px","lineHeight":"32px","fontWeight":700,"sample":"125 000 FCFA","usage":"Montants mis en avant (soldes, totaux)."}]},
+{"name":"Texte","family":"sans","styles":[
+{"name":"h3","fontSize":"18px","lineHeight":"24px","fontWeight":600,"sample":"Détails du paiement","usage":"Titre de carte."},
+{"name":"body","fontSize":"15px","lineHeight":"22px","fontWeight":400,"sample":"Votre paiement a bien été reçu.","usage":"Texte courant."},
+{"name":"label","fontSize":"13px","lineHeight":"18px","fontWeight":600,"sample":"Référence","usage":"Libellés de champs, boutons, onglets."},
+{"name":"caption","fontSize":"12px","lineHeight":"16px","fontWeight":500,"sample":"Il y a 2 min · Orange Money","usage":"Métadonnées, horodatages."}]},
+{"name":"Code","family":"mono","styles":[
+{"name":"code","fontSize":"13px","lineHeight":"20px","fontWeight":400,"sample":"POST /v1/payments","usage":"Documentation API, clés, identifiants de transaction."}]}]},
+"spacing":{"tokens":[
+{"name":"space-1","value":"4px","usage":"Écart icône–texte."},
+{"name":"space-2","value":"8px","usage":"Écart entre éléments liés (libellé–champ)."},
+{"name":"space-3","value":"12px","usage":"Padding vertical des boutons ; espace de protection du logo (= 1/4 de la tuile à 48px)."},
+{"name":"space-4","value":"16px","usage":"Padding des cartes, gouttière mobile."},
+{"name":"space-6","value":"24px","usage":"Écart entre cartes."},
+{"name":"space-8","value":"32px","usage":"Écart entre sections."},
+{"name":"space-12","value":"48px","usage":"Respiration des pages marketing."}]},
+"radius":{"tokens":[
+{"name":"radius-sm","value":"6px","usage":"Badges, puces, champs compacts."},
+{"name":"radius-md","value":"10px","usage":"Boutons, champs de saisie."},
+{"name":"radius-lg","value":"16px","usage":"Cartes, modales. La tuile du logo suit le même ratio (12/48 = 25 %)."},
+{"name":"radius-pill","value":"999px","usage":"Pastilles de statut, la pièce."}]},
+"shadow":{"tokens":[{"name":"shadow-card","value":{"light":"0 1px 2px rgba(14,26,22,0.06)","dark":"0 1px 2px rgba(0,0,0,0.4)"},"usage":"Seule ombre autorisée, sous les cartes surélevées."}]}}

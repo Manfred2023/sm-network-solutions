@@ -1,0 +1,11 @@
+mySchool — Charte graphique (version 2, novembre 2026)
+
+mySchool-charte-graphique.pdf  La charte complète : logo, couleurs, typographie, règles d'usage.
+logos/svg/                     Logos vectoriels (à privilégier) : couleur, inversé, monochrome, symbole seul.
+logos/png/                     Logos en PNG ; symbole en 64, 256, 512 et 1024 px.
+logos/favicon.ico              Icône pour navigateur.
+polices/                       Sora (titres, logo), Figtree (texte), IBM Plex Mono (identifiants).
+                               .ttf pour installer sur un ordinateur, .woff2 pour le web. Licence OFL jointe.
+couleurs/myschool-tokens.css   Variables CSS des couleurs, espacements, rayons et polices (thèmes clair et sombre).
+couleurs/tokens.json           Les mêmes jetons au format JSON.
+couleurs/palette.md            Tableau des couleurs avec leurs codes hexadécimaux.

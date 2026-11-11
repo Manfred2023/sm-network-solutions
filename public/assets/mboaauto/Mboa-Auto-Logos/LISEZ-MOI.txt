@@ -1,0 +1,12 @@
+Mboa Auto - Pack logo (v2, novembre 2026)
+
+PNG à fond transparent, tirés du logo officiel (original 1280 px).
+- Emblème : version complète, grands formats sur fond clair.
+- Compact : voiture + nom, bannières et réseaux sociaux.
+- Logotype : "MBOA AUTO" seul, en-têtes de site et d'appli.
+- Monogramme : écusson + MA, favicon, avatar, icône d'appli (proposition).
+- "-negatif" : sur fond sombre. "-mono-noir" / "-mono-blanc" : une seule couleur.
+
+Couleurs : Or #C9972B - Noir #0D1117 - Vert Confiance #1B4D32
+Important : pour l'enseigne, les banderoles et le flocage, faire redessiner le logo en vectoriel (AI, EPS, SVG ou PDF).
+Règles complètes : Mboa-Auto-Charte-graphique.pdf

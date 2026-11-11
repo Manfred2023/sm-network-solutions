@@ -1,23 +1,45 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, watch } from 'vue'
+import { useRoute } from 'vue-router'
 import { nav, company } from '../../data/site'
+import { t } from '../../i18n'
+import ThemeToggle from './ThemeToggle.vue'
+import LangSwitch from './LangSwitch.vue'
+import BrandLogo from './BrandLogo.vue'
+
 const open = ref(false)
+const route = useRoute()
+watch(() => route.fullPath, () => { open.value = false })
+watch(open, (o) => { document.body.style.overflow = o ? 'hidden' : '' })
 </script>
 <template>
-  <header class="sticky top-0 z-50 bg-navy text-white border-b border-white/10">
-    <div class="mx-auto max-w-7xl flex items-center justify-between px-5 h-16">
-      <RouterLink to="/" class="shrink-0" @click="open = false"><img src="/assets/SM-Network-Solutions_Identite-visuelle/01_Logo-horizontal/SVG/SMNS_logo-horizontal_inverse_transparent.svg" :alt="company.name" width="177" height="36" class="h-9 w-auto" /></RouterLink>
-      <nav class="hidden xl:flex gap-6 text-sm">
-        <RouterLink v-for="n in nav" :key="n.to + n.label" :to="n.to" class="text-white/75 hover:text-white" active-class="!text-white">{{ n.label }}</RouterLink>
+  <header class="sticky top-0 z-50 border-b border-line bg-bg/85 backdrop-blur-md">
+    <div class="container-site flex h-16 items-center justify-between gap-4">
+      <RouterLink to="/" class="shrink-0" :aria-label="company.name"><BrandLogo class="h-9" /></RouterLink>
+
+      <nav class="hidden lg:flex items-center gap-1 text-sm font-semibold" aria-label="Navigation">
+        <RouterLink v-for="n in nav" :key="n.to" :to="n.to" class="rounded-lg px-3 py-2 text-ink/70 transition-colors hover:text-ink"
+          exact-active-class="!text-ink bg-surface">{{ t(n.key) }}</RouterLink>
       </nav>
-      <RouterLink to="/contact" class="hidden xl:block bg-tech px-5 py-2 text-sm font-semibold hover:bg-tech/90">Demander un devis</RouterLink>
-      <button class="xl:hidden p-2" :aria-expanded="open" aria-label="Menu" @click="open = !open">
-        <svg width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"><path v-if="!open" d="M3 6h18M3 12h18M3 18h18" /><path v-else d="M5 5l14 14M19 5L5 19" /></svg>
-      </button>
+
+      <div class="flex items-center gap-2">
+        <LangSwitch class="hidden sm:inline-flex" />
+        <ThemeToggle />
+        <RouterLink to="/contact" class="hidden lg:inline-flex h-10 items-center rounded-lg bg-brand px-4 text-sm font-semibold text-white transition-colors hover:bg-brand-hover">{{ t('cta.quote') }}</RouterLink>
+        <button type="button" class="lg:hidden inline-flex h-10 w-10 items-center justify-center rounded-lg border border-line" :aria-expanded="open" aria-controls="mobile-menu" :aria-label="t('a11y.menu')" @click="open = !open">
+          <svg width="20" height="20" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" aria-hidden="true">
+            <path v-if="!open" d="M4 7h16M4 12h16M4 17h16" /><path v-else d="M6 6l12 12M18 6L6 18" />
+          </svg>
+        </button>
+      </div>
     </div>
-    <div v-if="open" class="xl:hidden fixed inset-x-0 top-16 bottom-0 bg-navy px-5 py-8 flex flex-col gap-5 overflow-y-auto">
-      <RouterLink v-for="n in nav" :key="n.to + n.label" :to="n.to" class="font-display text-3xl" @click="open = false">{{ n.label }}</RouterLink>
-      <RouterLink to="/contact" class="mt-4 bg-tech text-center py-4 font-semibold" @click="open = false">Demander un devis</RouterLink>
+
+    <div v-if="open" id="mobile-menu" class="lg:hidden fixed inset-x-0 top-16 bottom-0 overflow-y-auto bg-bg">
+      <nav class="container-site flex flex-col py-6" aria-label="Navigation">
+        <RouterLink v-for="n in nav" :key="n.to" :to="n.to" class="border-b border-line py-4 font-display text-2xl font-bold" exact-active-class="text-tech">{{ t(n.key) }}</RouterLink>
+        <LangSwitch class="mt-6 self-start sm:hidden" />
+        <RouterLink to="/contact" class="mt-6 rounded-lg bg-brand py-4 text-center font-semibold text-white">{{ t('cta.quote') }}</RouterLink>
+      </nav>
     </div>
   </header>
 </template>
