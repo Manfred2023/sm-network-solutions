@@ -1,4 +1,6 @@
-<script setup lang="ts">defineProps<{ title: string; text?: string; eyebrow?: string }>()</script>
+<script setup lang="ts">
+defineProps<{ title: string; text?: string; eyebrow?: string }>()
+</script>
 <template>
   <section class="relative overflow-hidden border-b border-line bg-surface">
     <svg class="pointer-events-none absolute inset-0 h-full w-full text-tech opacity-[0.12]" aria-hidden="true">

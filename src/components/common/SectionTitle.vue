@@ -1,4 +1,6 @@
-<script setup lang="ts">defineProps<{ title: string; text?: string; eyebrow?: string; dark?: boolean }>()</script>
+<script setup lang="ts">
+defineProps<{ title: string; text?: string; eyebrow?: string; dark?: boolean }>()
+</script>
 <template>
   <div class="mb-10 max-w-2xl md:mb-14">
     <p v-if="eyebrow" class="eyebrow mb-3" :class="dark ? '!text-[#8FB3FF]' : ''">{{ eyebrow }}</p>

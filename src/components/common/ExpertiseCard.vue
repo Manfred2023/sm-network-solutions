@@ -1,4 +1,6 @@
-<script setup lang="ts">defineProps<{ title: string; items: string[] }>()</script>
+<script setup lang="ts">
+defineProps<{ title: string; items: string[] }>()
+</script>
 <template>
   <article class="card h-full p-6 transition-colors hover:border-tech/60">
     <span class="block h-1 w-10 rounded-full bg-tech" aria-hidden="true"></span>

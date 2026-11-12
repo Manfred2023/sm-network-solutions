@@ -1,4 +1,6 @@
-<script setup lang="ts">defineProps<{ title: string; text: string; index: number }>()</script>
+<script setup lang="ts">
+defineProps<{ title: string; text: string; index: number }>()
+</script>
 <template>
   <article class="card group relative p-6 transition-colors hover:border-tech/60">
     <span class="font-display text-sm font-extrabold text-tech">{{ String(index + 1).padStart(2, '0') }}</span>
