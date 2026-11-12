@@ -34,12 +34,15 @@ watch(open, (o) => { document.body.style.overflow = o ? 'hidden' : '' })
       </div>
     </div>
 
-    <div v-if="open" id="mobile-menu" class="lg:hidden fixed inset-x-0 top-16 bottom-0 overflow-y-auto bg-bg">
-      <nav class="container-site flex flex-col py-6" aria-label="Navigation">
-        <RouterLink v-for="n in nav" :key="n.to" :to="n.to" class="border-b border-line py-4 font-display text-2xl font-bold" exact-active-class="text-tech">{{ t(n.key) }}</RouterLink>
-        <LangSwitch class="mt-6 self-start sm:hidden" />
-        <RouterLink to="/contact" class="mt-6 rounded-lg bg-brand py-4 text-center font-semibold text-white">{{ t('cta.quote') }}</RouterLink>
-      </nav>
-    </div>
+    <!-- Teleport : le backdrop-filter du header crée un containing block qui casse position:fixed -->
+    <Teleport to="body">
+      <div v-if="open" id="mobile-menu" class="lg:hidden fixed inset-x-0 top-16 bottom-0 z-40 overflow-y-auto bg-bg">
+        <nav class="container-site flex flex-col py-6" aria-label="Navigation">
+          <RouterLink v-for="n in nav" :key="n.to" :to="n.to" class="border-b border-line py-4 font-display text-2xl font-bold" exact-active-class="text-tech">{{ t(n.key) }}</RouterLink>
+          <LangSwitch class="mt-6 self-start sm:hidden" />
+          <RouterLink to="/contact" class="mt-6 rounded-lg bg-brand py-4 text-center font-semibold text-white">{{ t('cta.quote') }}</RouterLink>
+        </nav>
+      </div>
+    </Teleport>
   </header>
 </template>
