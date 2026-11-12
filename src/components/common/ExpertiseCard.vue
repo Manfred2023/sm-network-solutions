@@ -1,12 +1,15 @@
 <script setup lang="ts">
-defineProps<{ title: string; items: string[] }>()
+// Domaine d'expertise. Les quatre domaines de terrain portent leur planche technique (comme sur l'accueil).
+import FieldDrawing from '../drawings/FieldDrawing.vue'
+defineProps<{ title: string; items: string[]; kind?: 'radio' | 'transmission' | 'fibre' | 'civil' }>()
 </script>
 <template>
-  <article class="card h-full p-6 transition-colors hover:border-tech/60">
-    <span class="block h-1 w-10 rounded-full bg-tech" aria-hidden="true"></span>
-    <h3 class="mt-5 text-xl">{{ title }}</h3>
-    <ul class="mt-4 space-y-2 text-sm text-muted">
-      <li v-for="i in items" :key="i" class="flex gap-2.5"><span class="mt-[0.55rem] h-px w-3 shrink-0 bg-tech" aria-hidden="true"></span>{{ i }}</li>
+  <article class="h-full">
+    <div v-if="kind" class="plate__frame mb-5" data-sc-in><FieldDrawing :kind="kind" /></div>
+    <div v-else class="mb-5 h-px bg-line"><span class="block h-0.5 w-10 bg-tech"></span></div>
+    <h3 class="text-xl">{{ title }}</h3>
+    <ul class="spec-list mt-3 text-sm">
+      <li v-for="i in items" :key="i">{{ i }}</li>
     </ul>
   </article>
 </template>

@@ -55,9 +55,35 @@ export const ui = {
   'final.title': s('Un projet d’infrastructure ou de transformation digitale ?', 'An infrastructure or digital transformation project?'),
   'final.text': s('Parlons de votre besoin et construisons ensemble une solution adaptée.', 'Tell us what you need and let’s build the right solution together.'),
 
+  // Itinéraire du signal (accueil)
+  'route.title': s('Itinéraire', 'Route'),
+  'route.on': s('raccordé', 'connected'),
+  'route.douala': s('Douala', 'Douala'),
+  'route.company': s('Société', 'Company'),
+  'route.radio': s('Radio', 'Radio'),
+  'route.transmission': s('Transmission', 'Transmission'),
+  'route.fibre': s('Fibre optique', 'Fibre optics'),
+  'route.civil': s('Génie civil', 'Civil works'),
+  'route.core': s('Cœur de réseau', 'Network core'),
+  'route.platforms': s('Plateformes', 'Platforms'),
+  'route.method': s('Méthode', 'Method'),
+  'route.team': s('Direction', 'Leadership'),
+  'route.contact': s('Contact', 'Contact'),
+  'core.title': s('Le cœur du réseau', 'The network core'),
+  'core.text': s(
+    'Énergie, sécurité, logiciel et formation : ce qui ne se voit pas, et qui fait tenir le reste.',
+    'Power, security, software and training: what you do not see, and what keeps everything else running.',
+  ),
+  'field.title': s('Le terrain', 'In the field'),
+  'contact.validated': s('formulaire validé', 'form validated'),
+
   // Pages
   'team.eyebrow': s('Direction', 'Leadership'),
-  'team.title': s('L’équipe de direction', 'Our leadership team'),
+  'team.title': s('Parlez directement à la direction', 'Talk directly to our leadership'),
+  'team.text': s(
+    'Un pôle Télécom et un pôle Solutions numériques : chaque projet est piloté par un ingénieur de son domaine, joignable directement.',
+    'A Telecom division and a Digital Solutions division: every project is led by an engineer from its field, reachable directly.',
+  ),
   'page.about.text': s('Qui nous sommes et ce que nous faisons.', 'Who we are and what we do.'),
   'page.expertise.text': s('Les compétences techniques de SM Network Solutions.', 'The technical capabilities of SM Network Solutions.'),
   'page.services.text': s('Six métiers pour couvrir le cycle de vie complet de vos infrastructures.', 'Six disciplines covering the full lifecycle of your infrastructure.'),

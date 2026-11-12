@@ -3,3 +3,4 @@ dist/
 .idea/workspace.xml
 *.log
 .env*
+scrollcraft/

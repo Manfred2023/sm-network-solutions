@@ -11,7 +11,7 @@ const meta = (title: T, description: T) => ({ title, description })
 
 const router = createRouter({
   history: createWebHistory(),
-  scrollBehavior: (to) => (to.hash ? { el: to.hash, top: 80 } : { top: 0 }),
+  scrollBehavior: (to) => (to.hash ? { el: to.hash, top: 80 } : { top: 0, behavior: 'instant' as ScrollBehavior }),
   routes: [
     { path: '/', component: () => import('./views/HomeView.vue'), meta: meta(
       s('Télécommunications, réseaux et solutions numériques', 'Telecommunications, networks and digital solutions'),
