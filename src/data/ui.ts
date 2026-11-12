@@ -56,6 +56,8 @@ export const ui = {
   'final.text': s('Parlons de votre besoin et construisons ensemble une solution adaptée.', 'Tell us what you need and let’s build the right solution together.'),
 
   // Pages
+  'team.eyebrow': s('Direction', 'Leadership'),
+  'team.title': s('L’équipe de direction', 'Our leadership team'),
   'page.about.text': s('Qui nous sommes et ce que nous faisons.', 'Who we are and what we do.'),
   'page.expertise.text': s('Les compétences techniques de SM Network Solutions.', 'The technical capabilities of SM Network Solutions.'),
   'page.services.text': s('Six métiers pour couvrir le cycle de vie complet de vos infrastructures.', 'Six disciplines covering the full lifecycle of your infrastructure.'),

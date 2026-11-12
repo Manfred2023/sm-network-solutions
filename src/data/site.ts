@@ -60,6 +60,17 @@ export const aboutFacts: [T, T][] = [
   [s('Activité', 'Activity'), s('Télécommunications, infrastructures, informatique et solutions numériques', 'Telecommunications, infrastructure, IT and digital solutions')],
 ]
 
+export const team: { name: string; role: T; title: T; email: string; phones: string[] }[] = [
+  {
+    name: 'Junior Fatcha', role: s('Directeur des opérations Télécom', 'Director of Telecom Operations'), title: s('Ingénieur Télécom', 'Telecom Engineer'),
+    email: 'junior.fatcha@smnetworkslt.net', phones: ['+237699896336'],
+  },
+  {
+    name: 'Manfred MOUKATE', role: s('Directeur des solutions numériques', 'Director of Digital Solutions'), title: s('Ingénieur Génie logiciel', 'Software Engineer'),
+    email: 'manfred.moukate@smnetworkslt.net', phones: ['+237699888709', '+237672846994'],
+  },
+]
+
 export const requestTypes: T[] = [
   s('Télécommunications', 'Telecommunications'), s('Fibre optique', 'Fibre optics'), s('Infrastructure', 'Infrastructure'), s('Réseau', 'Networking'),
   s('Développement logiciel', 'Software development'), s('Cloud', 'Cloud'), s('Cybersécurité', 'Cybersecurity'), s('IA / Automatisation', 'AI / Automation'),
