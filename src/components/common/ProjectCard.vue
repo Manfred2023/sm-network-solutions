@@ -11,7 +11,10 @@ defineProps<{ product: Product; reverse?: boolean }>()
       <span class="absolute bottom-0 left-0 h-1.5 w-24" :style="{ backgroundColor: product.accent }" aria-hidden="true"></span>
     </div>
     <div class="flex flex-col p-6 sm:p-10">
-      <p class="eyebrow">{{ tr(product.category) }}</p>
+      <p class="eyebrow flex flex-wrap items-center gap-3">
+        <span v-if="product.featured" class="rounded-full bg-tech px-2.5 py-0.5 text-[0.6875rem] font-bold tracking-wider text-bg">★ {{ t('projects.featured') }}</span>
+        {{ tr(product.category) }}
+      </p>
       <h2 class="mt-2 text-3xl sm:text-4xl">{{ product.name }}</h2>
       <p v-if="product.tagline" class="mt-2 font-semibold text-ink/80">{{ tr(product.tagline) }}</p>
       <p class="mt-4 text-lg text-muted">{{ tr(product.text) }}</p>

@@ -6,7 +6,7 @@ import { aboutFacts } from '../../data/site'
 import { t, tr } from '../../i18n'
 </script>
 <template>
-  <section id="node-company" class="home-sec">
+  <section id="node-company" class="home-sec home-sec--tight-b">
     <div class="container-site relative">
       <NodeMark id="company" :label="t('route.company')" class="node-at" />
       <div class="rail-pad grid gap-12 lg:grid-cols-12 lg:gap-10">

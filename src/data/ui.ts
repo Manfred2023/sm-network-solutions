@@ -56,6 +56,7 @@ export const ui = {
   'final.text': s('Parlons de votre besoin et construisons ensemble une solution adaptée.', 'Tell us what you need and let’s build the right solution together.'),
 
   // Itinéraire du signal (accueil)
+  'projects.featured': s('Projet phare', 'Flagship project'),
   'route.title': s('Itinéraire', 'Route'),
   'route.on': s('raccordé', 'connected'),
   'route.douala': s('Douala', 'Douala'),
@@ -99,11 +100,11 @@ export const ui = {
   'page.projects.features': s('Fonctionnalités clés', 'Key features'),
   'page.contact.title': s('Contact', 'Contact'),
   'page.contact.text': s('Décrivez votre besoin, nous revenons vers vous rapidement.', 'Tell us about your needs and we’ll get back to you shortly.'),
-  'page.legal.title': s('Informations légales', 'Legal information'),
-  'page.legal.text': s(
-    'Contenu à fournir : immatriculation, représentant légal, hébergeur, traitement des données.',
-    'Content to be provided: registration, legal representative, hosting provider, data processing.',
-  ),
+  'page.legal.title': s('Mentions légales', 'Legal notice'),
+  'page.legal.text': s('Éditeur, hébergement et conditions d’utilisation du site.', 'Publisher, hosting and terms of use of this website.'),
+  'page.privacy.title': s('Politique de confidentialité', 'Privacy policy'),
+  'page.privacy.text': s('Quelles données ce site traite, pourquoi, et quels sont vos droits.', 'What data this website processes, why, and what your rights are.'),
+  'legal.updated': s('Dernière mise à jour', 'Last updated'),
 
   // Formulaire
   'form.name': s('Nom complet', 'Full name'),

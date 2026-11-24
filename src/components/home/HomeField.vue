@@ -15,7 +15,7 @@ const plates = [
 const routeKey = { radio: 'route.radio', transmission: 'route.transmission', fibre: 'route.fibre', civil: 'route.civil', software: 'route.software' } as const
 </script>
 <template>
-  <section class="home-sec home-sec--grid">
+  <section class="home-sec home-sec--grid home-sec--tight-t">
     <div class="container-site relative">
       <div class="rail-pad mb-12 max-w-3xl md:mb-16" data-sc-in>
         <h2 class="text-3xl sm:text-4xl md:text-5xl">{{ t('expertise.title') }}</h2>

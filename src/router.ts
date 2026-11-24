@@ -24,12 +24,12 @@ const router = createRouter({
       s('Expertise', 'Expertise'), s('Télécom, réseaux, fibre, développement logiciel, cloud, cybersécurité, IA et énergie.', 'Telecom, networks, fibre, software development, cloud, cybersecurity, AI and energy.')) },
     { path: '/projects', component: () => import('./views/ProjectsView.vue'), meta: meta(
       s('Réalisations', 'Projects'),
-      s('SM-PAY, mySchool, Mboa Auto, MyPass, VotMe et WDone : les plateformes réalisées par SM Network Solutions.', 'SM-PAY, mySchool, Mboa Auto, MyPass, VotMe and WDone: platforms built by SM Network Solutions.')) },
+      s('VotMe, SM-PAY, mySchool, Mboa Auto, MyPass et WDone : les plateformes réalisées par SM Network Solutions.', 'VotMe, SM-PAY, mySchool, Mboa Auto, MyPass and WDone: platforms built by SM Network Solutions.')) },
     { path: '/solutions', redirect: '/projects' },
     { path: '/contact', component: () => import('./views/ContactView.vue'), meta: meta(
       s('Contact', 'Contact'), s('Demander un devis ou parler à un expert.', 'Request a quote or talk to an expert.')) },
-    { path: '/legal', component: () => import('./views/LegalView.vue'), meta: meta(s('Mentions légales', 'Legal notice'), s('Mentions légales.', 'Legal notice.')) },
-    { path: '/privacy', component: () => import('./views/LegalView.vue'), meta: meta(s('Politique de confidentialité', 'Privacy policy'), s('Politique de confidentialité.', 'Privacy policy.')) },
+    { path: '/legal', component: () => import('./views/LegalView.vue'), meta: meta(s('Mentions légales', 'Legal notice'), s('Mentions légales de SM NETWORK SOLUTIONS SARL : éditeur, hébergement, propriété intellectuelle.', 'Legal notice of SM NETWORK SOLUTIONS SARL: publisher, hosting, intellectual property.')) },
+    { path: '/privacy', component: () => import('./views/LegalView.vue'), meta: meta(s('Politique de confidentialité', 'Privacy policy'), s('Données collectées, finalités, conservation et droits des utilisateurs.', 'Data collected, purposes, retention and user rights.')) },
     { path: '/:pathMatch(.*)*', redirect: '/' },
   ],
 })

@@ -8,7 +8,9 @@ export const company = {
   name: 'SM Network Solutions', legal: 'SM NETWORK SOLUTIONS SARL',
   city: s('Douala, Cameroun', 'Douala, Cameroon'),
   tagline: 'Engineering technology. Building connectivity.',
-  email: null as string | null, phone: null as string | null, address: null as string | null, hours: null as string | null,
+  email: null as string | null, phone: null as string | null, address: 'Makepe, Abou de Bangui, Douala – Cameroun' as string | null, hours: null as string | null,
+  // Mentions légales : à compléter (null = ligne masquée sur /legal).
+  rccm: 'CM-DLA-01-2026-B13-00955' as string | null, niu: 'M102619050655U' as string | null, capital: '900 000 FCFA' as string | null, director: 'Manfred MOUKATE' as string | null, // directeur de la publication ; co-gérants : `managers`
 }
 
 export const nav = [
@@ -66,7 +68,7 @@ export const team: TeamMember[] = [
   {
     name: 'Junior FATCHA', pole: s('Télécom', 'Telecom'),
     role: s('Directeur des opérations Télécom', 'Director of Telecom Operations'), title: s('Ingénieur Télécom', 'Telecom Engineer'),
-    email: 'junior.fatcha@smnetworksolutions.net', phones: ['+237699896336', '237683945830'],
+    email: 'junior.fatcha@smnetworksolutions.net', phones: ['+237699896336', '+237683945830'],
   },
   {
     name: 'Manfred MOUKATE', pole: s('Digital', 'Digital'),
@@ -85,10 +87,20 @@ export const requestTypes: T[] = [
 // Couleurs et logos : public/assets/<produit> (charte propre à chaque produit). Le bandeau garde ses couleurs dans les deux thèmes.
 export type Product = {
   slug: string; name: string; category: T; text: T; features: T<string[]>; tagline?: T; url: string | null
-  logo: string; panel: string; accent: string
+  logo: string; panel: string; accent: string; featured?: boolean
 }
 
 export const products: Product[] = [
+  // Projet phare : affiché en premier, avec le badge « Projet phare ».
+  {
+    slug: 'votme', name: 'VotMe', category: s('Vote en ligne', 'Online voting'), url: 'https://votme.cm',
+    text: s(
+      'Application de vote en ligne : votez pour vos candidats par Mobile Money.',
+      'Online voting app: vote for your candidates via Mobile Money.',
+    ),
+    features: list(['Vote pour vos candidats', 'Paiement par Mobile Money'], ['Vote for your candidates', 'Mobile Money payment']),
+    logo: '/assets/votme/logo/VotMe_Brand_Guideline-07.png', panel: '#FBF9EF', accent: '#B71C1C', featured: true,
+  },
   {
     slug: 'smpay', name: 'SM-PAY', category: s('API de paiement', 'Payment API'), url: null,
     tagline: s('Payez. Encaissez. Simplement.', 'Pay. Get paid. Simply.'),
@@ -140,15 +152,6 @@ export const products: Product[] = [
     logo: '/assets/mypass/mypass-brand-kit/logo/svg/mypass-logo-horizontal-inverse.svg', panel: '#111218', accent: '#D4F03C',
   },
   {
-    slug: 'votme', name: 'VotMe', category: s('Vote en ligne', 'Online voting'), url: 'https://votme.cm',
-    text: s(
-      'Application de vote en ligne : votez pour vos candidats par Mobile Money.',
-      'Online voting app: vote for your candidates via Mobile Money.',
-    ),
-    features: list(['Vote pour vos candidats', 'Paiement par Mobile Money'], ['Vote for your candidates', 'Mobile Money payment']),
-    logo: '/assets/votme/logo/VotMe_Brand_Guideline-07.png', panel: '#FBF9EF', accent: '#B71C1C',
-  },
-  {
     slug: 'wdone', name: 'WDone', category: s('Collecte de fonds', 'Fundraising'), url: 'https://wdone.cm',
     text: s(
       'Application de collecte de fonds : ensemble, donnons vie aux projets qui comptent. Besoins urgents, rêves personnels ou projets communautaires.',
@@ -161,3 +164,6 @@ export const products: Product[] = [
     logo: '/assets/wdone/logos/wdone-logo-horizontal-inverse.svg', panel: '#1B2B6B', accent: '#F2603A',
   },
 ]
+
+// Co-gérants, affichés sur /legal.
+export const managers = team.map((m) => m.name)

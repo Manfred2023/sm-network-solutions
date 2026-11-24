@@ -53,7 +53,7 @@ const span = typeof innerWidth !== 'undefined' && innerWidth < 768 ? '2.4' : '3'
                     <span class="tile__accent" :style="{ backgroundColor: p.accent }"></span>
                   </span>
                 </span>
-                <span class="tile__name">{{ p.name }}</span>
+                <span class="tile__name">{{ p.name }}<span v-if="p.featured" class="tile__star">★ {{ t('projects.featured') }}</span></span>
                 <span class="tile__cat">{{ tr(p.category) }}</span>
               </RouterLink>
             </li>
@@ -107,6 +107,7 @@ const span = typeof innerWidth !== 'undefined' && innerWidth < 768 ? '2.4' : '3'
 .tile__lit img { max-width: 70%; max-height: 52%; object-fit: contain; transform: scale(calc(0.94 + var(--lit) * 0.06)); }
 .tile__accent { position: absolute; left: 0; bottom: 0; height: 4px; width: 32%; }
 .tile__name { display: block; margin-top: 0.75rem; font-weight: 800; letter-spacing: -0.01em; }
+.tile__star { margin-left: 0.5rem; padding: 0.1rem 0.45rem; border-radius: 999px; background: rgb(var(--tech)); color: rgb(var(--bg)); font-size: 0.625rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; vertical-align: 0.15em; }
 .tile__cat { display: block; font-size: 0.8125rem; color: rgb(var(--muted)); }
 @media (hover: hover) and (pointer: fine) {
   .tile__link:hover .tile__name { color: rgb(var(--tech)); }

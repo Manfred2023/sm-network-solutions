@@ -68,6 +68,9 @@
   .home-sec { position: relative; padding-block: clamp(5.5rem, 10vw, 9rem); }
   .home-sec--grid { background-image: var(--bp-grid); background-size: 48px 48px; }
   .home-sec--surface { background-color: rgb(var(--surface)); }
+  /* Société → Domaines : sections enchaînées, on évite que les deux marges s'additionnent. */
+  .home-sec--tight-b { padding-bottom: clamp(3rem, 5vw, 4.5rem); }
+  .home-sec--tight-t { padding-top: clamp(4rem, 6vw, 5.5rem); }
   .rail-pad { padding-left: 2.25rem; }
   @media (min-width: 1024px) { .rail-pad { padding-left: 3.5rem; } }
   /* repère de nœud : dans la marge intérieure du conteneur (même x que le hero) */
