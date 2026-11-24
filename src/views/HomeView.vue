@@ -17,7 +17,7 @@ import { resetSignal } from '../composables/signal'
 import type { T } from '../i18n'
 import { ui } from '../data/ui'
 
-const ids = ['douala', 'company', 'radio', 'transmission', 'fibre', 'civil', 'core', 'platforms', 'method', 'team', 'contact'] as const
+const ids = ['douala', 'company', 'radio', 'transmission', 'fibre', 'civil', 'software', 'core', 'platforms', 'method', 'team', 'contact'] as const
 resetSignal(ids.map((id) => ({ id, label: ui[`route.${id}` as keyof typeof ui] as T })))
 
 const root = ref<HTMLElement | null>(null)

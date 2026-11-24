@@ -1,7 +1,7 @@
 <script setup lang="ts">
-// Domaine d'expertise. Les quatre domaines de terrain portent leur planche technique (comme sur l'accueil).
+// Domaine d'expertise. Les cinq domaines illustrés portent leur planche technique (comme sur l'accueil).
 import FieldDrawing from '../drawings/FieldDrawing.vue'
-defineProps<{ title: string; items: string[]; kind?: 'radio' | 'transmission' | 'fibre' | 'civil' }>()
+defineProps<{ title: string; items: string[]; kind?: 'radio' | 'transmission' | 'fibre' | 'civil' | 'software' }>()
 </script>
 <template>
   <article class="h-full">

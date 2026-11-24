@@ -21,7 +21,7 @@ export const expertise: { title: T; items: T<string[]> }[] = [
   { title: s('Transmission & Réseaux', 'Transmission & Networks'), items: list(['Réseaux IP', 'Ethernet', 'Faisceaux hertziens', 'Transmission', 'Supervision'], ['IP networks', 'Ethernet', 'Microwave links', 'Transmission', 'Monitoring']) },
   { title: s('Fibre optique', 'Fibre optics'), items: list(['FTTH / FTTx', 'Déploiement', 'Raccordement', 'Maintenance'], ['FTTH / FTTx', 'Deployment', 'Connection', 'Maintenance']) },
   { title: s('Génie civil & infrastructures', 'Civil works & infrastructure'), items: list(['Pylônes et supports', 'Câblage', 'Tranchées', 'Installations télécom'], ['Towers and supports', 'Cabling', 'Trenching', 'Telecom installations']) },
-  { title: s('Solutions numériques', 'Digital solutions'), items: list(['Développement logiciel', 'Applications mobiles', 'Plateformes web et SaaS', 'API', 'Bases de données', 'Cloud'], ['Software development', 'Mobile apps', 'Web and SaaS platforms', 'APIs', 'Databases', 'Cloud']) },
+  { title: s('Génie logiciel', 'Software engineering'), items: list(['Développement logiciel', 'Applications mobiles', 'Plateformes web et SaaS', 'API', 'Bases de données', 'Cloud'], ['Software development', 'Mobile apps', 'Web and SaaS platforms', 'APIs', 'Databases', 'Cloud']) },
   { title: s('Cybersécurité & IA', 'Cybersecurity & AI'), items: list(['Sécurisation des infrastructures', 'Intelligence artificielle', 'Automatisation'], ['Infrastructure security', 'Artificial intelligence', 'Automation']) },
   { title: s('Énergie & systèmes de secours', 'Energy & backup systems'), items: list(['Systèmes d’alimentation', 'Batteries', 'Solaire', 'Mise à la terre', 'Protection électrique'], ['Power systems', 'Batteries', 'Solar', 'Earthing', 'Electrical protection']) },
   { title: s('Assistance technique & formation', 'Technical support & training'), items: list(['Études et audit', 'Conseil', 'Assistance technique', 'Formation'], ['Studies and audits', 'Consulting', 'Technical support', 'Training']) },
@@ -64,14 +64,14 @@ export const aboutFacts: [T, T][] = [
 export type TeamMember = { name: string; pole: T; role: T; title: T; email: string; phones: string[]; photo?: string }
 export const team: TeamMember[] = [
   {
-    name: 'Junior Fatcha', pole: s('Télécom', 'Telecom'),
+    name: 'Junior FATCHA', pole: s('Télécom', 'Telecom'),
     role: s('Directeur des opérations Télécom', 'Director of Telecom Operations'), title: s('Ingénieur Télécom', 'Telecom Engineer'),
-    email: 'junior.fatcha@smnetworkslt.net', phones: ['+237699896336'],
+    email: 'junior.fatcha@smnetworksolutions.net', phones: ['+237699896336', '237683945830'],
   },
   {
     name: 'Manfred MOUKATE', pole: s('Digital', 'Digital'),
     role: s('Directeur des solutions numériques', 'Director of Digital Solutions'), title: s('Ingénieur Génie logiciel', 'Software Engineer'),
-    email: 'manfred.moukate@smnetworkslt.net', phones: ['+237699888709', '+237672846994'],
+    email: 'manfred.moukate@smnetworksolutions.net', phones: ['+237699888709', '+237672846994'],
   },
 ]
 

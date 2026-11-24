@@ -64,6 +64,7 @@ export const ui = {
   'route.transmission': s('Transmission', 'Transmission'),
   'route.fibre': s('Fibre optique', 'Fibre optics'),
   'route.civil': s('Génie civil', 'Civil works'),
+  'route.software': s('Génie logiciel', 'Software engineering'),
   'route.core': s('Cœur de réseau', 'Network core'),
   'route.platforms': s('Plateformes', 'Platforms'),
   'route.method': s('Méthode', 'Method'),
